@@ -1,0 +1,19 @@
+.faculty-images{
+    width: 75px;
+    height: 100px;
+}
+
+#clg-logo{
+    width: 250px;
+    height: 100px;
+}
+
+label {
+    display: inline-block;
+    clear: left;
+    width: 250px;
+}
+
+input{
+    display: inline-block;
+}

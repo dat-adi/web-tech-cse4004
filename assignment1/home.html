@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <div class="header">
+            <img id="clg-logo" src="./static/images/logo.jpg" alt="College Logo">
+            <div class="redirect-links">
+                <li><a href="./home.html">Home Page</a></li>
+                <li><a href="./another.html">Another Page</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </div>
+            <div class="heading">
+                <h1>A test website</h1>
+            </div>
+        </div>
+        <div class="detail-collection-form">
+            <form id="collection-form">
+                <fieldset>
+                    <legend>Student Details</legend>
+
+                    <label for="Fname">First Name : </label>
+                    <input type="text" name="fname" id="fname-input" autofocus required>
+                    <br>
+                    <label for="Lname">Last Name : </label>
+                    <input type="text" name="lname" id="lname-input" autofocus required>
+                    <br>
+                    <label for="Sregis">Registration Number : </label>
+                    <input type="text" name="regisno" id="regisno-input" autofocus required>
+                    <br>
+                    <label for="Email">Student Email : </label>
+                    <input type="email" name="email" id="email-input" required>
+                    <br>
+
+                    <label for="year-of-study">Year of Study</label>
+                    <select name="batch" id="batch">
+                        <option value="senior">Senior</option>
+                        <option value="junior">Junior</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="fresher">Fresher</option>
+                    </select>
+                    <br>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="faculty-list">
+            <table class="faculty-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Designation</th>
+                    <th>Photo</th>
+                    <th>Area of Specialization</th>
+                    <th>Mail ID</th>
+                </tr>
+                <tr>
+                    <td>Dr. S. Hari Seetha</td>
+                    <td>SCOPE</td>
+                    <td>Professor & Dean</td>
+                    <td><img class="faculty-images" src="https://vitap.ac.in/wp-content/uploads/2019/06/Dr.-HARI-SEETHA.jpg" alt="Dean"></td>
+                    <td>Machine Learning</td>
+                    <td><a href="mailto:">Dr. S. Hari Seetha</a></td>
+                </tr>
+                <tr>
+                    <td>Dr. Ch. Pradeep Reddy</td>
+                    <td>SCOPE</td>
+                    <td>Professor</td>
+                    <td><img class="faculty-images" src="https://vitap.ac.in/wp-content/uploads/2019/06/Dr.-PRADEEP-REDDY.jpg" alt="Professor"></td>
+                    <td>Machine Learning</td>
+                    <td><a href="mailto:">Dr. Ch. Pradeep Reddy</a></td>
+                </tr>
+                <tr>
+                    <td>Dr. S. Sibi Chakkravarthy</td>
+                    <td>SCOPE</td>
+                    <td>Professor</td>
+                    <td><img class="faculty-images" src="https://vitap.ac.in/wp-content/uploads/2019/06/Dr.-S.-SIBI-CHAKRAVARTY.jpg" alt="Professor"></td>
+                    <td>Cyber Security</td>
+                    <td><a href="mailto:">Dr. S. Sibi Chakkravarthy</a></td>
+                </tr>
+                <tr>
+                    <td>Ms. Daphna Chacko</td>
+                    <td>SCOPE</td>
+                    <td>Professor</td>
+                    <td><img class="faculty-images" src="https://vitap.ac.in/wp-content/uploads/2020/08/Daphna-Chacko_70200.jpg" alt="Professor"></td>
+                    <td>Web Technologies</td>
+                    <td><a href="mailto:">Ms. Daphna Chacko</a></td>
+                </tr>
+                <caption><h1>Faculty Profile</h1></caption>
+            </table>
+        </div>
+    </body>
+</html>
