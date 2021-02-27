@@ -1,0 +1,35 @@
+#vitap-image {
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+}
+
+.header-bar>a{
+    color: green;
+    text-decoration-line: none;
+}
+#vitap-image {
+    width: 300px;
+    height: 100px;
+}
+.faculty-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.faculty-images{
+    width: 75px;
+    height: 100px;
+}
+.header-bar>a{
+    color: green;
+    text-decoration-line: none;
+}
+table, th, td {
+    border: 1px solid black;
+}
+.footer{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+}
