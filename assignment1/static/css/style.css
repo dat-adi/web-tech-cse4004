@@ -1,0 +1,92 @@
+a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+ul {
+    position: -webkit-sticky;
+    position: sticky;
+    list-style-type: none;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+.active {
+    background-color: #af6f4c;
+}
+
+table, th, td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.faculty-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faculty-images{
+    width: 75px;
+    height: 100px;
+}
+
+.another-box{
+    border: 1px solid black;
+    margin: 1px;
+    padding-left: 1em;
+    outline: auto;
+}
+
+#clg-logo{
+    width: 250px;
+    height: 100px;
+}
+
+label {
+    display: inline-block;
+    clear: left;
+    width: 250px;
+}
+
+input{
+    display: inline-block;
+}
+
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+}
+
+footer li {
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

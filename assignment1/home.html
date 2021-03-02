@@ -4,21 +4,41 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./static/css/style.css">
         <title>Home Page</title>
     </head>
+    <style>
+        #clg-logo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1em;
+        }
+
+        #submit-button{
+            background-color: azure;
+        }
+
+        label{
+            margin-bottom: 1em;
+        }
+
+    </style>
     <body>
         <div class="header">
             <img id="clg-logo" src="./static/images/logo.jpg" alt="College Logo">
-            <div class="redirect-links">
-                <li><a href="./home.html">Home Page</a></li>
-                <li><a href="./another.html">Another Page</a></li>
-                <li><a href="./about.html">About Us</a></li>
-            </div>
-            <div class="heading">
-                <h1>A test website</h1>
-            </div>
         </div>
+
+        <ul>
+            <li><a class="active" href="./home.html">Home Page</a></li>
+            <li><a href="https://www.vitap.ac.in">Vellore Institute of Technology AP</a></li>
+            <li><a href="./about.html">About us</a></li>
+        </ul>
+
+        <div class="heading">
+            <h1>A test website</h1>
+        </div>
+
         <div class="detail-collection-form">
             <form id="collection-form">
                 <fieldset>
@@ -46,7 +66,7 @@
                     </select>
                     <br>
 
-                    <input type="submit" value="Submit">
+                    <input id="submit-button" type="submit" value="Submit">
                 </fieldset>
             </form>
         </div>
@@ -67,7 +87,7 @@
                     <td>Professor & Dean</td>
                     <td><img class="faculty-images" src="https://vitap.ac.in/wp-content/uploads/2019/06/Dr.-HARI-SEETHA.jpg" alt="Dean"></td>
                     <td>Machine Learning</td>
-                    <td><a href="mailto:">Dr. S. Hari Seetha</a></td>
+                    <td><a href="mailto:seetha.hari@vitap.ac.in">Dr. S. Hari Seetha</a></td>
                 </tr>
                 <tr>
                     <td>Dr. Ch. Pradeep Reddy</td>
@@ -75,7 +95,7 @@
                     <td>Professor</td>
                     <td><img class="faculty-images" src="https://vitap.ac.in/wp-content/uploads/2019/06/Dr.-PRADEEP-REDDY.jpg" alt="Professor"></td>
                     <td>Machine Learning</td>
-                    <td><a href="mailto:">Dr. Ch. Pradeep Reddy</a></td>
+                    <td><a href="mailto:pradeep.ch@vitap.ac.in">Dr. Ch. Pradeep Reddy</a></td>
                 </tr>
                 <tr>
                     <td>Dr. S. Sibi Chakkravarthy</td>
@@ -83,7 +103,7 @@
                     <td>Professor</td>
                     <td><img class="faculty-images" src="https://vitap.ac.in/wp-content/uploads/2019/06/Dr.-S.-SIBI-CHAKRAVARTY.jpg" alt="Professor"></td>
                     <td>Cyber Security</td>
-                    <td><a href="mailto:">Dr. S. Sibi Chakkravarthy</a></td>
+                    <td><a href="mailto:chakkaravarthy.sibi@vitap.ac.in">Dr. S. Sibi Chakkravarthy</a></td>
                 </tr>
                 <tr>
                     <td>Ms. Daphna Chacko</td>
@@ -91,10 +111,18 @@
                     <td>Professor</td>
                     <td><img class="faculty-images" src="https://vitap.ac.in/wp-content/uploads/2020/08/Daphna-Chacko_70200.jpg" alt="Professor"></td>
                     <td>Web Technologies</td>
-                    <td><a href="mailto:">Ms. Daphna Chacko</a></td>
+                    <td><a href="mailto:daphna.chacko@vitap.ac.in">Ms. Daphna Chacko</a></td>
                 </tr>
                 <caption><h1>Faculty Profile</h1></caption>
             </table>
         </div>
+
+        <div class="another-box">
+            <p>Visit the about page for a single line of information</p>
+        </div>
+        <footer>
+            <li class="active">Datta Adithya</li>
+            <li>19BCE7119</li>
+        </footer>
     </body>
 </html>
