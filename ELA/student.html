@@ -8,62 +8,74 @@
         <title>Home</title>
     </head>
     <body>
-        <div class="header">
-            <img id="vitap-image" src="./vitaplogo.png" alt="VIT AP Logo">
-            <h1><center>Vellore Institute of Technology AP University</center></h1>
-            <div class="header-bar">
-                <a href="home.html">Home</a> |
-                <a href="department.html">Department</a> |
-                <a href="student.html">Students</a> |
-                <a href="placement.html">Placements</a> |
-                <a href="alumni.html">Alumni</a> |
-                <a href="contact.html">Contact Us</a> |
-                <a href="http://vtop2.vitap.ac.in:8070/vtop/initialProcess">VTOP Student Login</a> |
+        <div class="row">
+            <div class="header">
+                <img id="vitap-image" src="./vitaplogo.png" alt="VIT AP Logo">
+                <div class="header-content">
+                    <h1>Vellore Institute of Technology AP University</h1>
+                </div>
             </div>
         </div>
-        <div class="main-content">
-            <h2>Notifications</h2>
-            <ol>
-                <li><a href=https://forms.gle/iHjTaFoqjCikWAtp9">Register for Web Hunt 3.0 & Software Freedom Day, 2021</a></li>
-                <li><a href="https://www.runtheworld.today/app/invitation/18914">Embrace Carpe Noctem</a></li>
-            </ol>
-            <div class="detail-collection-form">
-                <form id="collection-form">
-                    <fieldset>
-                        <legend>Student Details</legend>
+        <div class="topnav">
+            <a href="home.html">Home</a>
+            <a href="department.html">Department</a>
+            <a href="student.html">Students</a>
+            <a href="placement.html">Placements</a>
+            <a href="alumni.html">Alumni</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="student-vtop-login.html">VTOP Student Login</a>
+        </div>
+        <div class="row">
+            <div class="column-main">
+                <div class="detail-collection-form">
+                    <form id="collection-form">
+                        <fieldset>
+                            <legend>Student Details</legend>
 
-                        <label for="Fname">First Name : </label>
-                        <input type="text" name="fname" id="fname-input" autofocus required>
-                        <br>
-                        <label for="Lname">Last Name : </label>
-                        <input type="text" name="lname" id="lname-input" autofocus required>
-                        <br>
-                        <label for="Sregis">Registration Number : </label>
-                        <input type="text" name="regisno" id="regisno-input" autofocus required>
-                        <br>
-                        <label for="Email">Student Email : </label>
-                        <input type="email" name="email" id="email-input" required>
-                        <br>
+                            <label for="Fname">First Name : </label>
+                            <input type="text" name="fname" id="fname-input" autofocus required>
+                            <br>
+                            <label for="Lname">Last Name : </label>
+                            <input type="text" name="lname" id="lname-input" autofocus required>
+                            <br>
+                            <label for="Sregis">Registration Number : </label>
+                            <input type="text" name="regisno" id="regisno-input" autofocus required>
+                            <br>
+                            <label for="Email">Student Email : </label>
+                            <input type="email" name="email" id="email-input" required>
+                            <br>
 
-                        <label for="year-of-study">Year of Study</label>
-                        <select name="batch" id="batch">
-                            <option value="senior">Senior</option>
-                            <option value="junior">Junior</option>
-                            <option value="sophomore">Sophomore</option>
-                            <option value="fresher">Fresher</option>
-                        </select>
-                        <br>
+                            <label for="year-of-study">Year of Study</label>
+                            <select name="batch" id="batch">
+                                <option value="senior">Senior</option>
+                                <option value="junior">Junior</option>
+                                <option value="sophomore">Sophomore</option>
+                                <option value="fresher">Fresher</option>
+                            </select>
+                            <br>
 
-                        <label for="contact-number">Contact Number : </label>
-                        <input type="text" name="Contact Number" id="contact-number">
+                            <label for="contact-number">Contact Number : </label>
+                            <input type="text" name="Contact Number" id="contact-number">
 
-                        <input type="submit" value="Submit">
-                    </fieldset>
-                </form>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="column-notif">
+                <div class="notifications">
+                    <h2>Notifications</h2>
+                    <ol>
+                        <li><a href="https://forms.gle/iHjTaFoqjCikWAtp9">Register for Web Hunt 3.0 & Software Freedom Day, 2021</a></li>
+                        <li><a href="https://www.runtheworld.today/app/invitation/18914">Embrace Carpe Noctem</a></li>
+                    </ol>
+                </div>
             </div>
         </div>
         <div class="footer">
-            <h1>VIT-AP University, Inavolu, Beside AP Secratariat, Pin Code : 522511</h1>
+            <div class="footer-content">
+                <p>VIT-AP University, Inavolu, Beside AP Secratariat, Pin Code : 522511</p>
+            </div>
         </div>
     </body>
 </html>
