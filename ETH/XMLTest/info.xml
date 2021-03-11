@@ -1,0 +1,14 @@
+<subjects>
+    <sub>
+        <code>CSE2001</code>
+        <name>Foundational Analytics</name>
+    </sub>
+    <sub>
+        <code>CSE2002</code>
+        <name>A Subject</name>
+    </sub>
+    <sub>
+        <code>CSE2003</code>
+        <name>Another Subject</name>
+    </sub>
+</subjects>
