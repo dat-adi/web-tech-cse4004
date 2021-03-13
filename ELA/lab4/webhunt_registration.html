@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="event_registration.css">
+        <title>Event Registration Form</title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <h2>Web Hunt</h2>
+        <form name="RegistrationForm">
+            <input type="hidden" value="Web Hunt">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name"><br>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label><br>
+            <label for="collegeName">College Name: </label>
+            <input type="text" name="collegeName" id="collegeName"><br>
+            <label for="branch">Branch: </label>
+            <select name="branch" id="branch">
+                <option value="CSE">CSE</option>
+                <option value="CSE-DA">CSE (spl. Data Analytics)</option>
+                <option value="CSE-AI">CSE (spl. Artificial Intelligence)</option>
+                <option value="CSE-NS">CSE (spl. Network Security)</option>
+                <option value="ECE">ECE</option>
+                <option value="MEC">MEC</option>
+            </select><br>
+            <label for="email">Email ID: </label>
+            <input type="text" name="email" id="email"><br>  
+            <label for="mobile">Mobile Number: </label>
+            <input type="text" name="mobile" id="mobile"><br>
+            <input type="submit" value="Submit" onclick="validateForm(document.RegistrationForm)">
+        </form>
+    </body>
+    <script src="form-validation.js"></script>
+</html>

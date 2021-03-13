@@ -1,0 +1,22 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+.event-container{
+    display: inline-grid;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.event{
+    width: 250px;
+    background-color: rgb(220, 236, 245);
+}
+
+.title{
+    font-size: larger;
+    font-weight: bold;
+}

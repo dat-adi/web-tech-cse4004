@@ -1,0 +1,17 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-weight: bold;
+}
+
+h2{
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+form{
+    margin: 0 auto;
+    width: 600px;
+}
