@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <script>
+    function add() {
+      var x = document.createElement("LI");
+      var elmt = document.getElementById("txt").value;
+      var t = document.createTextNode(elmt);
+      x.appendChild(t);
+      document.getElementById("lst").appendChild(x);
+    }
+    function del() {
+      var list = document.getElementById("lst");
+      list.removeChild(list.childNodes[0]);
+    }
+    function paint() {
+      var x = document.querySelectorAll("li:nth-child(odd)");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.backgroundColor = "blue";
+      }
+    }
+  </script>
+</head>
+<html>
+  <body>
+    <label for="txt">Name:</label>
+    <input type="text" name="myfname" id="txt" /><br /><br />
+    <button onclick="add()">Insert</button>
+    <button onclick="del()">Delete</button>
+    <button onclick="paint()">Color</button>
+    <ol id="lst">
+      <li>Jasmine</li>
+      <li>Rose</li>
+    </ol>
+    <p id="demo"></p>
+  </body>
+</html>
+---
