@@ -8,6 +8,7 @@ function loadDoc(){
     xhttp.open("GET", "http://127.0.0.1/XMLTest/info.xml", true);
     xhttp.send();
 }
+
 function xmlFunc(xml){
     var i;
     var xmlDoc = xml.responseXML;

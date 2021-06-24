@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkStatus() {
+                var str = document.forms["frm"]["book"].value;
+                document.getElementById("info").innerHTML = str;
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("info").innerHTML = this.responseText;
+                }
+                };
+                xmlhttp.open("GET","checkStatus.php?q="+str,true);
+                xmlhttp.send();
+            }
+
+        </script>
+    </head>
+    <body>
+        <h3>Welcome Reader!!!</h3>
+        <form name="frm" method="POST" action="checkStatus.php">
+            <label for="book">Enter book title</label>
+            <input id="book" type="text" name="title" ><br>
+            <button>Search</button>
+              
+        </form>
+            <br>
+            <div id="info"><b>Book info will be listed here...</b></div>
+    
+    
+</body>
+</html>

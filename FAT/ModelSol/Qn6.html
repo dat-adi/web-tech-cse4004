@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body ng-app="Palindrome" ng-controller="numCtrl">
+        <h3>Check and learn if number is a palindrome</h3>
+        <label for="pal">Enter a number</label>
+        <input id="pal" type="number" ng-model="palCheck" >
+        <button ng-click="pCheck()">Check</button>
+        <p>{{result}}</p>
+        <script>
+            var app = angular.module("Palindrome", []);
+            app.controller("numCtrl", function($scope) {
+                $scope.pCheck = function(){
+                    var rem, temp, final = 0;
+                    temp = parseInt($scope.palCheck);
+                    number = temp;
+                    while(number>0)
+                    {
+                        rem = number%10;
+                        number = parseInt(number/10);
+                        final = final*10+rem;
+                    }
+                    if(final==temp)
+                    {
+                        $scope.result="The number is Palindrome";
+                    }
+                    else
+                    {
+                        $scope.result="The number is not a Palindrome";
+                    }
+                };
+            });
+        </script>
+    </body>
+
+</html>

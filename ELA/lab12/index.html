@@ -1,0 +1,63 @@
+<!--Design a student login webpage in AngularJS framework
+and provide options for student to add elective subjects-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lab Experiment 10</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body ng-app="sampleApp">
+		<div class="login-page" ng-controller="AngularController">
+			<form ng-submit="Display()">
+				<!--Student Details-->
+				<label class="regno-label" for="regno">
+					Registration Number:
+				</label>
+				<input class="regnum" type="text" ng-model="regno" /><br />
+
+				<label class="passwd-label" for="pass">Password:</label>
+				<input class="passwd" type="password" ng-model="pass" /><br />
+
+				<!--Course Selection-->
+				<label for="electives">Pick your Electives: </label><br />
+				<input
+					type="checkbox"
+					name="electives"
+					id="Web Technologies"
+					ng-model="checkboxModel.value1"
+				/>
+				Web Technologies <br />
+
+				<input
+					type="checkbox"
+					name="electives"
+					id="Foundations of Data Analytics"
+					ng-model="checkboxModel.value2"
+				/>
+				Foundations of Data Analytics <br />
+
+				<input
+					type="checkbox"
+					name="electives"
+					id="Secure Coding"
+					ng-model="checkboxModel.value3"
+				/>
+				Secure Coding <br />
+
+				<!--Button to submit the form-->
+				<input class="submit-btn" type="submit"></input>
+
+				<!--Publishing the details that have been inserted-->
+				<h2>Chosen Courses</h2>
+				<ul ng-repeat="course in AllCourses">
+					<li>{{ course }}</li>
+				</ul>
+			</form>
+		</div>
+	</body>
+	<script src="./form.js"></script>
+</html>

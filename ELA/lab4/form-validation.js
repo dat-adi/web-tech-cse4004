@@ -1,5 +1,4 @@
 function validateForm(Form){
-    
     let name = Form.name;
     let collegeName = Form.collegeName;
     let email = Form.email;

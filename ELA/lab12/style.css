@@ -1,0 +1,29 @@
+.login-page {
+	display: grid;
+	padding-top: 40%;
+	gap: 0 50px;
+	grid-template-areas:
+		"regno regnoinput"
+		"passwd passwdinput"
+		"submit submit";
+	align-items: center;
+	justify-items: center;
+}
+
+.regno-label {
+	grid-area: regno;
+}
+
+.regnum {
+	grid-area: regnoinput;
+}
+
+.passwd-label {
+	grid-area: passwd;
+}
+.passwd {
+	grid-area: passwdinput;
+}
+.submit-btn {
+	grid-area: submit;
+}
